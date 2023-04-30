@@ -2,6 +2,12 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Blazoratory.Demo", "src\apps\demo\Blazoratory.Demo.csproj", "{7AF94A77-9DF0-4693-8868-E5E9B7B67334}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Apps", "Apps", "{7E9B5756-AEEE-4493-AF49-F181810BE752}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Src", "Src", "{E98F19A9-5A7D-44C8-BB7E-3DE2C77E7EF0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Blazoratory", "src\components\Blazoratory\Blazoratory.csproj", "{3D3359FC-412D-427C-90FD-71914B15BA3F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +18,13 @@ Global
 		{7AF94A77-9DF0-4693-8868-E5E9B7B67334}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7AF94A77-9DF0-4693-8868-E5E9B7B67334}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7AF94A77-9DF0-4693-8868-E5E9B7B67334}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D3359FC-412D-427C-90FD-71914B15BA3F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D3359FC-412D-427C-90FD-71914B15BA3F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D3359FC-412D-427C-90FD-71914B15BA3F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D3359FC-412D-427C-90FD-71914B15BA3F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{7AF94A77-9DF0-4693-8868-E5E9B7B67334} = {7E9B5756-AEEE-4493-AF49-F181810BE752}
+		{3D3359FC-412D-427C-90FD-71914B15BA3F} = {E98F19A9-5A7D-44C8-BB7E-3DE2C77E7EF0}
 	EndGlobalSection
 EndGlobal

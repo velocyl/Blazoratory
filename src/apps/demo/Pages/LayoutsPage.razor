@@ -1,0 +1,34 @@
+﻿@page "/layouts"
+
+<h2>Stack Container Column</h2>
+
+<StackContainer Centered Styles="border: 5px solid;">
+    <StackItem>
+        <h1>Taco</h1>
+        <sub>Why I love it?</sub>
+        <p>It's delicious!</p>
+    </StackItem>
+    <StackItem>
+        <h1>Ice Cream</h1>
+        <sub>Why I love it?</sub>
+        <p>It's delicious!</p>
+    </StackItem>
+    <StackItem>
+        <h1>Car tires</h1>
+        <sub>Why I love it?</sub>
+        <p>It's delicious!</p>
+    </StackItem>
+</StackContainer>
+
+<h2>Stack Container Row with Stack Items</h2>
+
+<StackContainer IsRow Styles="border: 5px solid;">
+    @for(var i = 0; i < 10; i++)
+    {
+        <StackItem Styles="border: 5px dotted;">
+            <h1>Taco</h1>
+            <sub>Why I love it?</sub>
+            <p>It's delicious!</p>
+        </StackItem>
+    }
+</StackContainer>

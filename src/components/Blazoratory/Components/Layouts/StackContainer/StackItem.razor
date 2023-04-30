@@ -1,0 +1,23 @@
+﻿<div class="@GetClass()" style="@GetStyles()">
+    @ChildContent
+</div>
+
+@code
+{
+    [Parameter]
+    public bool Centered { get; set; }
+    
+    [Parameter]
+    public string Gap { get; set; } = "";
+    
+    [Parameter]
+    public string Styles { get; set; } = string.Empty;
+
+    [Parameter]
+    public RenderFragment ChildContent { get; set; } = default!;
+    
+    private string GetClass() => "stack-item";
+    private string GetGap() => Gap == "" ? "" : $"gap:{Gap};";
+    private string GetCentered() => Centered ? "align-items: center;" : "";
+    private string GetStyles() => GetGap()+GetCentered()+Styles;
+}
